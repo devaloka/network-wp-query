@@ -1,0 +1,45 @@
+{
+    "name"           : "network-wp-query",
+    "version"        : "0.1.0",
+    "description"    : "A WordPress plugin that provides Network-wide WP Query for Multisite environment",
+    "keywords"       : [
+        "wordpress",
+        "plugin",
+        "network",
+        "multisite",
+        "wp_query"
+    ],
+    "homepage"       : "https://github.com/devaloka/network-wp-query",
+    "bugs"           : {
+        "url": "https://github.com/devaloka/network-wp-query/isssues"
+    },
+    "license"        : "(GPL-2.0 OR GPL-3.0)",
+    "author"         : {
+        "name" : "Whizark",
+        "email": "devaloka@whizark.com",
+        "url"  : "http://whizark.com"
+    },
+    "files"          : [
+        "./LICENSE",
+        "./network-wp-query.php",
+        "./loader/*",
+        "./src/*"
+    ],
+    "main"           : "./network-wp-query.php",
+    "repository"     : {
+        "type": "git",
+        "url" : "https://github.com/devaloka/network-wp-query.git"
+    },
+    "scripts"        : {
+        "lint"       : "remark -u remark-lint README.md",
+        "lint-travis": "remark -f -u remark-lint README.md"
+    },
+    "devDependencies": {
+        "gulp"        : "^3.9.0",
+        "gulp-filter" : "^3.0.1",
+        "gulp-replace": "^0.5.4",
+        "remark"      : "^3.0.0",
+        "remark-lint" : "^2.0.0",
+        "semver"      : "^5.1.0"
+    }
+}

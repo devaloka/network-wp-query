@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+    <description>Coding Standard</description>
+
+    <rule ref="PSR2" />
+
+    <file>./src/</file>
+    <file>./loader/</file>
+    <file>./network-wp-query.php</file>
+</ruleset>

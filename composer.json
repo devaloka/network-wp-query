@@ -1,0 +1,66 @@
+{
+    "name"             : "devaloka/network-wp-query",
+    "description"      : "A WordPress plugin that provides Network-wide WP Query for Multisite environment",
+    "version"          : "0.1.0",
+    "type"             : "wordpress-plugin",
+    "keywords"         : [
+        "wordpress",
+        "plugin",
+        "network",
+        "multisite",
+        "wp_query"
+    ],
+    "homepage"         : "https://github.com/devaloka/network-wp-query",
+    "license"          : [
+        "GPL-2.0",
+        "GPL-3.0"
+    ],
+    "minimum-stability": "stable",
+    "authors"          : [
+        {
+            "name"    : "Whizark",
+            "email"   : "devaloka@whizark.com",
+            "homepage": "http://whizark.com",
+            "role"    : "Developer"
+        }
+    ],
+    "support"          : {
+        "email" : "devaloka@whizark.com",
+        "issues": "https://github.com/devaloka/network-wp-query/isssues",
+        "wiki"  : "https://github.com/devaloka/network-wp-query/wiki",
+        "source": "https://github.com/devaloka/network-wp-query"
+    },
+    "require"          : {
+        "php"                : ">=5.5.9",
+        "composer/installers": "~1.0"
+    },
+    "require-dev"      : {
+        "squizlabs/php_codesniffer": "^2.5.0"
+    },
+    "scripts"          : {
+        "test"       : [
+            "php vendor/squizlabs/php_codesniffer/scripts/phpcs --colors"
+        ],
+        "test-travis": [
+            "php vendor/squizlabs/php_codesniffer/scripts/phpcs --colors"
+        ]
+    },
+    "archive"          : {
+        "exclude": [
+            ".gitignore",
+            ".gitattributes",
+            ".mailmap",
+            ".editorconfig",
+            "package.json",
+            "npm-shrinkwrap.json",
+            ".remarkrc",
+            "gulpfile.js",
+            "composer.json",
+            "phpcs.xml",
+            ".travis.yml"
+        ]
+    },
+    "extra"            : {
+        "installer-loader": "loader/50-network-wp-query-loader.php"
+    }
+}
