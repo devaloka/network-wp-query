@@ -18,6 +18,16 @@
     "minimum-stability": "stable",
     "authors"          : [
         {
+            "name"    : "Eric Lewis",
+            "email"   : "eric.andrew.lewis@gmail.com",
+            "homepage": "http://www.ericandrewlewis.com"
+        },
+        {
+            "name"    : "Miguel Peixe",
+            "email"   : "miguel@cardume.art.br",
+            "homepage": "http://codigourbano.org"
+        },
+        {
             "name"    : "Whizark",
             "email"   : "devaloka@whizark.com",
             "homepage": "http://whizark.com",
