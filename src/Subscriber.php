@@ -4,6 +4,7 @@
  *
  * @author Whizark <devaloka@whiark.com>
  * @see http://whizark.com
+ * @copyright Copyright (C) 2015 Whizark.
  * @license GPL-2.0
  * @license GPL-3.0
  */
