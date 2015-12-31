@@ -24,6 +24,11 @@ class Plugin
     protected $subscriber;
 
     /**
+     * @var NetworkWpQuery
+     */
+    protected $msWpQuery;
+
+    /**
      * The constructor.
      */
     public function __construct()
