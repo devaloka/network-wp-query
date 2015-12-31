@@ -128,7 +128,7 @@ class NetworkWpQuery
             return;
         }
 
-        if ($this->isInLoop || !isset($this->site_ID)) {
+        if ($this->isInLoop || !isset($post->site_ID)) {
             return;
         }
 
