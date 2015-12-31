@@ -50,9 +50,9 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
     <?php while ($query->have_posts()): $query->the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; ?>
-<?php endif; ?>
 
-<?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
+<?php endif; ?>
 ```
 
 ### Query to several specific Sites
@@ -64,9 +64,9 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
     <?php while ($query->have_posts()): $query->the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; ?>
-<?php endif; ?>
 
-<?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
+<?php endif; ?>
 ```
 
 ### Query excluding several specific Sites
@@ -78,9 +78,9 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
     <?php while ($query->have_posts()): $query->the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; ?>
-<?php endif; ?>
 
-<?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
+<?php endif; ?>
 ```
 
 ### Limit the number of posts per Site
@@ -92,9 +92,9 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
     <?php while ($query->have_posts()): $query->the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; ?>
-<?php endif; ?>
 
-<?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
+<?php endif; ?>
 ```
 
 ## Parameters
