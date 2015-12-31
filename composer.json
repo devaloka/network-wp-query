@@ -1,7 +1,7 @@
 {
     "name"             : "devaloka/network-wp-query",
     "description"      : "A WordPress plugin that provides Network-wide WP Query for Multisite environment",
-    "version"          : "0.1.0",
+    "version"          : "0.1.1",
     "type"             : "wordpress-plugin",
     "keywords"         : [
         "wordpress",

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Network WP Query
 Description: Network-wide WP Query for Multisite environment
-Version: 0.1.0
+Version: 0.1.1
 Author: Eric Lewis, Miguel Peixe, Whizark
 Author URI: http://whizark.com
 License: GPL-2.0+
