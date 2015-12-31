@@ -2,10 +2,12 @@
 /**
  * Network WP_Query
  *
- * @author Eric Lewis
+ * @author Eric Lewis <eric.andrew.lewis@gmail.com>
+ * @see http://www.ericandrewlewis.com
  * @see https://github.com/ericandrewlewis/WP_Query_Multisite
  *
- * @author Miguel Peixe
+ * @author Miguel Peixe <miguel@cardume.art.br>
+ * @see http://codigourbano.org
  * @see https://github.com/miguelpeixe/WP_Query_Multisite
  *
  * @author Whizark <devaloka@whiark.com>
