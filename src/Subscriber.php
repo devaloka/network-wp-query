@@ -24,16 +24,16 @@ class Subscriber
     /**
      * @var NetworkWpQuery
      */
-    protected $wpQuery;
+    protected $networkWpQuery;
 
     /**
      * The constructor.
      *
-     * @param NetworkWpQuery $wpQuery
+     * @param NetworkWpQuery $networkWpQuery
      */
-    public function __construct($wpQuery)
+    public function __construct($networkWpQuery)
     {
-        $this->wpQuery = $wpQuery;
+        $this->networkWpQuery = $networkWpQuery;
     }
 
     /**
@@ -57,7 +57,7 @@ class Subscriber
      */
     public function onQueryVars(array $queryVars)
     {
-        $queryVars = array_merge($queryVars, $this->wpQuery->getQueryVars());
+        $queryVars = array_merge($queryVars, $this->networkWpQuery->getQueryVars());
 
         return array_unique($queryVars);
     }
@@ -67,7 +67,7 @@ class Subscriber
      */
     public function onPreGetPosts(WP_Query $query)
     {
-        $this->wpQuery->setUpQuery($query);
+        $this->networkWpQuery->setUpQuery($query);
     }
 
     /**
@@ -78,7 +78,7 @@ class Subscriber
      */
     public function onPostsClauses($clauses, WP_Query $query)
     {
-        return $this->wpQuery->modifyClauses($clauses, $query);
+        return $this->networkWpQuery->modifyClauses($clauses, $query);
     }
 
     /**
@@ -89,7 +89,7 @@ class Subscriber
      */
     public function onPostsRequest($sql, WP_Query $query)
     {
-        return $this->wpQuery->modifyQuery($sql, $query);
+        return $this->networkWpQuery->modifyQuery($sql, $query);
     }
 
     /**
@@ -97,7 +97,7 @@ class Subscriber
      */
     public function onLoopStart(WP_Query $query)
     {
-        $this->wpQuery->setUpLoop($query);
+        $this->networkWpQuery->setUpLoop($query);
     }
 
     /**
@@ -106,7 +106,7 @@ class Subscriber
      */
     public function onThePost(WP_Post $post, WP_Query $query)
     {
-        $this->wpQuery->setUpPost($post, $query);
+        $this->networkWpQuery->setUpPost($post, $query);
     }
 
     /**
@@ -114,6 +114,6 @@ class Subscriber
      */
     public function onLoopEnd(WP_Query $query)
     {
-        $this->wpQuery->tearDownLoop($query);
+        $this->networkWpQuery->tearDownLoop($query);
     }
 }

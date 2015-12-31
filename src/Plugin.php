@@ -26,7 +26,7 @@ class Plugin
     /**
      * @var NetworkWpQuery
      */
-    protected $msWpQuery;
+    protected $networkWpQuery;
 
     /**
      * The constructor.
@@ -35,8 +35,8 @@ class Plugin
     {
         global $wpdb;
 
-        $this->msWpQuery  = new NetworkWpQuery($wpdb);
-        $this->subscriber = new Subscriber($this->msWpQuery);
+        $this->networkWpQuery = new NetworkWpQuery($wpdb);
+        $this->subscriber     = new Subscriber($this->networkWpQuery);
     }
 
     /**
