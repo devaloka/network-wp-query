@@ -102,8 +102,8 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
 | Name           | Type    | Description                               |
 | -------------- |:-------:| ----------------------------------------- |
 | network        | boolint | Whether perform network-wide query.       |
-| site__in       | bool    | Blog IDs to include in the query.         |
-| site__not_in   | bool    | Blog IDs to excluded from the query.      |
+| site__in       | int[]   | Blog IDs to include in the query.         |
+| site__not_in   | int[]   | Blog IDs to excluded from the query.      |
 | posts_per_site | int     | The number of posts per Site to retrieve. |
 
 ## References
