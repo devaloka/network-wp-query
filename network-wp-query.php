@@ -18,9 +18,9 @@ if (!defined('ABSPATH')) {
 
 use Devaloka\Plugin\NetworkWpQuery\Plugin;
 
-require __DIR__ . '/src/NetworkWpQuery.php';
-require __DIR__ . '/src/Subscriber.php';
-require __DIR__ . '/src/Plugin.php';
+require_once __DIR__ . '/src/NetworkWpQuery.php';
+require_once __DIR__ . '/src/Subscriber.php';
+require_once __DIR__ . '/src/Plugin.php';
 
 $NETWORK_WP_QUERY = new Plugin();
 
