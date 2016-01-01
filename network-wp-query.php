@@ -22,6 +22,6 @@ require_once __DIR__ . '/src/NetworkWpQuery.php';
 require_once __DIR__ . '/src/Subscriber.php';
 require_once __DIR__ . '/src/Plugin.php';
 
-$Network_WP_Query = new Plugin();
+$network_wp_query = new Plugin();
 
-$Network_WP_Query->boot();
+$network_wp_query->boot();
