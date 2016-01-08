@@ -45,6 +45,7 @@ class Subscriber
         add_action('pre_get_posts', [$this, 'onPreGetPosts'], PHP_INT_MAX);
         add_filter('posts_clauses', [$this, 'onPostsClauses'], 10, 2);
         add_filter('posts_request', [$this, 'onPostsRequest'], 10, 2);
+        add_action('the_posts', [$this, 'onThePosts'], 10, 2);
         add_action('loop_start', [$this, 'onLoopStart']);
         add_action('the_post', [$this, 'onThePost'], 10, 2);
         add_action('loop_end', [$this, 'onLoopEnd']);
@@ -90,6 +91,17 @@ class Subscriber
     public function onPostsRequest($sql, WP_Query $query)
     {
         return $this->networkWpQuery->modifyQuery($sql, $query);
+    }
+
+    /**
+     * @param WP_Post[] $posts
+     * @param WP_Query $query
+     *
+     * @return WP_Post[]
+     */
+    public function onThePosts(array $posts, WP_Query $query)
+    {
+        return $this->networkWpQuery->modifyPosts($posts, $query);
     }
 
     /**

@@ -107,6 +107,28 @@ class NetworkWpQuery
     }
 
     /**
+     * @param WP_Post[] $posts
+     *
+     * @return WP_Post[]
+     */
+    public function modifyPosts(array $posts, WP_Query $query)
+    {
+        if (!$query->get('network')) {
+            return $posts;
+        }
+
+        foreach ($posts as $post) {
+            if (!isset($post->site_ID)) {
+                continue;
+            }
+
+            $post->site_ID = (int) $post->site_ID;
+        }
+
+        return $posts;
+    }
+
+    /**
      * @param WP_Query $query
      */
     public function setUpLoop(WP_Query $query)
