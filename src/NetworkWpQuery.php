@@ -31,29 +31,29 @@ use wpdb;
 class NetworkWpQuery
 {
     /**
-     * @var wpdb
+     * @var wpdb An instance of wpdb.
      */
     protected $wpdb;
 
     /**
-     * @var int[]
+     * @var int[] The Site IDs to query.
      */
     protected $siteIds = [];
 
     /**
-     * @var string[]
+     * @var string[] The array of SELECT statements for Sites to query.
      */
     protected $selectStatements;
 
     /**
-     * @var bool
+     * @var bool Whether the current Site is switched in a loop.
      */
     protected $isSwitched = false;
 
     /**
      * The constructor.
      *
-     * @param wpdb $wpdb
+     * @param wpdb $wpdb An instance of wpdb.
      */
     public function __construct(wpdb $wpdb)
     {
@@ -61,7 +61,9 @@ class NetworkWpQuery
     }
 
     /**
-     * @param WP_Query $query
+     * Sets up for a query.
+     *
+     * @param WP_Query $query An instance of WP_Query.
      */
     public function setUpQuery(WP_Query $query)
     {
@@ -97,9 +99,13 @@ class NetworkWpQuery
     }
 
     /**
-     * @param WP_Post[] $posts
+     * Modifies WP_Post objects.
      *
-     * @return WP_Post[]
+     * Casts WP_Post::site_ID to integer.
+     *
+     * @param WP_Post[] $posts A array of WP_Post.
+     *
+     * @return WP_Post[] The modified array of WP_Post.
      */
     public function modifyPosts(array $posts, WP_Query $query)
     {
@@ -119,7 +125,9 @@ class NetworkWpQuery
     }
 
     /**
-     * @param WP_Query $query
+     * Sets up for a loop.
+     *
+     * @param WP_Query $query An instance of WP_Query.
      */
     public function setUpLoop(WP_Query $query)
     {
@@ -131,8 +139,12 @@ class NetworkWpQuery
     }
 
     /**
-     * @param WP_Post $post
-     * @param WP_Query $query
+     * Sets up for a Post in a loop.
+     *
+     * Restores/Switches the current Site.
+     *
+     * @param WP_Post $post An instance of WP_Post.
+     * @param WP_Query $query An instance of WP_Query.
      */
     public function setUpPost(WP_Post $post, WP_Query $query)
     {
@@ -160,7 +172,11 @@ class NetworkWpQuery
     }
 
     /**
-     * @param WP_Query $query
+     * Tears down for a loop.
+     *
+     * Restores the current Site.
+     *
+     * @param WP_Query $query An instance of WP_Query.
      */
     public function tearDownLoop(WP_Query $query)
     {
@@ -176,7 +192,9 @@ class NetworkWpQuery
     }
 
     /**
-     * @return string[]
+     * Gets query variables whitelist.
+     *
+     * @return string[] The query variables whitelist.
      */
     public function getQueryVars()
     {
@@ -189,10 +207,12 @@ class NetworkWpQuery
     }
 
     /**
-     * @param string[] $clauses
-     * @param WP_Query $query
+     * Modifies query clauses.
      *
-     * @return string[]
+     * @param string[] $clauses The array of clauses for a query.
+     * @param WP_Query $query An instance of WP_Query.
+     *
+     * @return string[] The modified clauses.
      */
     public function modifyClauses($clauses, WP_Query $query)
     {
@@ -236,10 +256,12 @@ class NetworkWpQuery
     }
 
     /**
-     * @param string $sql
-     * @param WP_Query $query
+     * Modifies a SQL query.
      *
-     * @return string
+     * @param string $sql The complete SQL query.
+     * @param WP_Query $query An instance of WP_Query.
+     *
+     * @return string The modified SQL query.
      */
     public function modifyQuery($sql, WP_Query $query)
     {
@@ -258,10 +280,12 @@ class NetworkWpQuery
     }
 
     /**
-     * @param int[] $excludeIds
-     * @param int[] $siteIds
+     * Removes some Site IDs from an array of Sites IDs.
      *
-     * @return int[]
+     * @param int[] $excludeIds The site IDs to exclude.
+     * @param int[] $siteIds An array of Site IDs.
+     *
+     * @return int[] The filtered array of Site IDs.
      */
     protected function excludeSiteIds(array $excludeIds, array $siteIds)
     {
@@ -274,10 +298,12 @@ class NetworkWpQuery
     }
 
     /**
-     * @param int[] $includeIds
-     * @param int[] $siteIds
+     * Picks up some Site Ids from an array of Sites IDs.
      *
-     * @return int[]
+     * @param int[] $includeIds The site IDs to include.
+     * @param int[] $siteIds An array of Site Ids.
+     *
+     * @return int[] The filtered array of Site IDs.
      */
     protected function includeSiteIds(array $includeIds, array $siteIds)
     {
@@ -290,11 +316,15 @@ class NetworkWpQuery
     }
 
     /**
-     * @param int[] $siteIds
-     * @param int[]|null $includeIds
-     * @param int[]|null $excludeIds
+     * Filters Site IDs.
      *
-     * @return int[]
+     * Picks up/Removes some Site IDs from an array of Site IDs.
+     *
+     * @param int[] $siteIds The Site ID to filter.
+     * @param int[]|null $includeIds An array of Site IDs to include.
+     * @param int[]|null $excludeIds An array of Site IDs to exclude.
+     *
+     * @return int[] The filtered array of Site IDs.
      */
     protected function filterSiteIds(array $siteIds, array $includeIds = [], array $excludeIds = [])
     {

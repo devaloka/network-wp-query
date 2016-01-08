@@ -22,14 +22,14 @@ use WP_Query;
 class Subscriber
 {
     /**
-     * @var NetworkWpQuery
+     * @var NetworkWpQuery An instance of NetworkWpQuery.
      */
     protected $networkWpQuery;
 
     /**
      * The constructor.
      *
-     * @param NetworkWpQuery $networkWpQuery
+     * @param NetworkWpQuery $networkWpQuery An instance of NetworkWpQuery.
      */
     public function __construct($networkWpQuery)
     {
@@ -52,9 +52,13 @@ class Subscriber
     }
 
     /**
-     * @param mixed[] $queryVars
+     * The `query_vars` filter listener.
      *
-     * @return mixed[]
+     * Returns the query variables whitelist.
+     *
+     * @param mixed[] $queryVars The query vars.
+     *
+     * @return mixed[] The query vars.
      */
     public function onQueryVars(array $queryVars)
     {
@@ -64,7 +68,9 @@ class Subscriber
     }
 
     /**
-     * @param WP_Query $query
+     * The `pre_get_posts` action listener.
+     *
+     * @param WP_Query $query The WP_Query instance.
      */
     public function onPreGetPosts(WP_Query $query)
     {
@@ -72,10 +78,12 @@ class Subscriber
     }
 
     /**
-     * @param string[] $clauses
-     * @param WP_Query $query
+     * The `posts_clauses` filter listener.
      *
-     * @return string
+     * @param string[] $clauses The array of clauses for the query.
+     * @param WP_Query $query The WP_Query instance.
+     *
+     * @return string[] The array of clauses for the query.
      */
     public function onPostsClauses($clauses, WP_Query $query)
     {
@@ -83,10 +91,12 @@ class Subscriber
     }
 
     /**
-     * @param string $sql
-     * @param WP_Query $query
+     * The `posts_request` filter listener.
      *
-     * @return string
+     * @param string $sql The complete SQL query.
+     * @param WP_Query $query The WP_Query instance.
+     *
+     * @return string The complete SQL query.
      */
     public function onPostsRequest($sql, WP_Query $query)
     {
@@ -94,10 +104,12 @@ class Subscriber
     }
 
     /**
-     * @param WP_Post[] $posts
-     * @param WP_Query $query
+     * The `the_posts` action listener.
      *
-     * @return WP_Post[]
+     * @param WP_Post[] $posts The array of retrieved posts.
+     * @param WP_Query $query The WP_Query instance.
+     *
+     * @return WP_Post[] The array of posts.
      */
     public function onThePosts(array $posts, WP_Query $query)
     {
@@ -105,7 +117,9 @@ class Subscriber
     }
 
     /**
-     * @param WP_Query $query
+     * The `loop_start` action listener.
+     *
+     * @param WP_Query $query The WP_Query instance.
      */
     public function onLoopStart(WP_Query $query)
     {
@@ -113,8 +127,10 @@ class Subscriber
     }
 
     /**
-     * @param WP_Post $post
-     * @param WP_Query $query
+     * The `the_post` action listener.
+     *
+     * @param WP_Post $post The WP_Post instance.
+     * @param WP_Query $query The WP_Query instance.
      */
     public function onThePost(WP_Post $post, WP_Query $query)
     {
@@ -122,7 +138,9 @@ class Subscriber
     }
 
     /**
-     * @param WP_Query $query
+     * The `loop_end` action listener.
+     *
+     * @param WP_Query $query The WP_Query instance.
      */
     public function onLoopEnd(WP_Query $query)
     {
