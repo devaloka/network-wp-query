@@ -56,11 +56,6 @@ class NetworkWpQuery
     protected $isSwitched = false;
 
     /**
-     * @var bool
-     */
-    protected $isInLoop = false;
-
-    /**
      * The constructor.
      *
      * @param wpdb $wpdb
@@ -138,7 +133,6 @@ class NetworkWpQuery
         }
 
         $this->siteId     = get_current_blog_id();
-        $this->isInLoop   = true;
         $this->isSwitched = false;
     }
 
@@ -152,7 +146,7 @@ class NetworkWpQuery
             return;
         }
 
-        if (!$this->isInLoop || !isset($post->site_ID)) {
+        if (!$query->in_the_loop || !isset($post->site_ID)) {
             return;
         }
 
@@ -185,7 +179,6 @@ class NetworkWpQuery
         }
 
         $this->isSwitched = false;
-        $this->isInLoop   = false;
     }
 
     /**
