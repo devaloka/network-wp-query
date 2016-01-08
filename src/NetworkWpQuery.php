@@ -227,14 +227,20 @@ class NetworkWpQuery
         foreach ($this->siteIds as $siteId) {
             switch_to_blog($siteId);
 
+            $postsPerSiteForTheSite = apply_filters('posts_per_site', $postsPerSite, $siteId);
+
+            if (!$postsPerSiteForTheSite) {
+                continue;
+            }
+
             $selectStatement = $clauses['join'] . ' WHERE 1=1 ' . $clauses['where'];
 
             if ($clauses['groupby']) {
                 $selectStatement .= ' GROUP BY ' . $clauses['groupby'];
             }
 
-            if ($postsPerSite && $clauses['orderby']) {
-                $selectStatement .= " ORDER BY {$clauses['orderby']} LIMIT 0, {$postsPerSite} ";
+            if ($clauses['orderby']) {
+                $selectStatement .= " ORDER BY {$clauses['orderby']} LIMIT 0, {$postsPerSiteForTheSite} ";
             }
 
             $selectStatement = str_replace($rootSiteDbPrefix, $this->wpdb->prefix, $selectStatement);
