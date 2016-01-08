@@ -58,7 +58,7 @@ class NetworkWpQuery
     /**
      * @var bool
      */
-    protected $isInLoop = true;
+    protected $isInLoop = false;
 
     /**
      * The constructor.
@@ -138,7 +138,7 @@ class NetworkWpQuery
         }
 
         $this->siteId     = get_current_blog_id();
-        $this->isInLoop   = false;
+        $this->isInLoop   = true;
         $this->isSwitched = false;
     }
 
@@ -152,7 +152,7 @@ class NetworkWpQuery
             return;
         }
 
-        if ($this->isInLoop || !isset($post->site_ID)) {
+        if (!$this->isInLoop || !isset($post->site_ID)) {
             return;
         }
 
@@ -185,7 +185,7 @@ class NetworkWpQuery
         }
 
         $this->isSwitched = false;
-        $this->isInLoop   = true;
+        $this->isInLoop   = false;
     }
 
     /**
