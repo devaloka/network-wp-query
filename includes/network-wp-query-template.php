@@ -5,7 +5,8 @@
  * @author Whizark <devaloka@whizark.com>
  * @see http://whizark.com
  * @copyright Copyright (C) 2015 Whizark.
- * @license MIT
+ * @license GPL-2.0
+ * @license GPL-3.0
  */
 
 if (!function_exists('get_the_site_ID')) {
