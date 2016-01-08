@@ -227,7 +227,7 @@ class NetworkWpQuery
         foreach ($this->siteIds as $siteId) {
             switch_to_blog($siteId);
 
-            $postsPerSiteForTheSite = apply_filters('posts_per_site', $postsPerSite, $siteId);
+            $postsPerSiteForTheSite = apply_filters('posts_per_site', $postsPerSite, $siteId, $query);
 
             if (!$postsPerSiteForTheSite) {
                 restore_current_blog();
