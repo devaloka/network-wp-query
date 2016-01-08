@@ -1,3 +1,19 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/devaloka/network-wp-query/compare/v0.1.1...v0.1.2) (2016-01-08)
+
+
+### Bug Fixes
+
+* cast WP_Post::site_ID to integer ([4b3d74e](https://github.com/devaloka/network-wp-query/commit/4b3d74e))
+* in-loop state false positive ([ba8a94d](https://github.com/devaloka/network-wp-query/commit/ba8a94d)), closes [#4](https://github.com/devaloka/network-wp-query/issues/4)
+
+### Features
+
+* add `posts_per_site` filter hook ([20dbec6](https://github.com/devaloka/network-wp-query/commit/20dbec6)), closes [#6](https://github.com/devaloka/network-wp-query/issues/6)
+* add get_the_site_ID(), the_site_ID() as template functions ([5b6c066](https://github.com/devaloka/network-wp-query/commit/5b6c066)), closes [#1](https://github.com/devaloka/network-wp-query/issues/1)
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/devaloka/network-wp-query/compare/v0.1.0...v0.1.1) (2015-12-31)
 
