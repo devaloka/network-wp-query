@@ -1,6 +1,6 @@
 {
     "name"           : "network-wp-query",
-    "version"        : "0.1.1",
+    "version"        : "0.1.2",
     "description"    : "A WordPress plugin that provides Network-wide WP Query for Multisite environment",
     "keywords"       : [
         "wordpress",
