@@ -36,11 +36,6 @@ class NetworkWpQuery
     protected $wpdb;
 
     /**
-     * @var int
-     */
-    protected $siteId;
-
-    /**
      * @var int[]
      */
     protected $siteIds = [];
@@ -132,7 +127,6 @@ class NetworkWpQuery
             return;
         }
 
-        $this->siteId     = get_current_blog_id();
         $this->isSwitched = false;
     }
 
