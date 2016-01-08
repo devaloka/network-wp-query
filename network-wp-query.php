@@ -25,3 +25,5 @@ require_once __DIR__ . '/src/Plugin.php';
 $network_wp_query = new Plugin();
 
 $network_wp_query->boot();
+
+require_once __DIR__ . '/includes/network-wp-query-template.php';

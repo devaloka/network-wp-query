@@ -22,6 +22,7 @@
     "files"          : [
         "./LICENSE",
         "./network-wp-query.php",
+        "./includes/*",
         "./loader/*",
         "./src/*"
     ],
