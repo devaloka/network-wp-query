@@ -230,6 +230,8 @@ class NetworkWpQuery
             $postsPerSiteForTheSite = apply_filters('posts_per_site', $postsPerSite, $siteId);
 
             if (!$postsPerSiteForTheSite) {
+                restore_current_blog();
+
                 continue;
             }
 
