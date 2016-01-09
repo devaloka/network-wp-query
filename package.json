@@ -11,7 +11,7 @@
     ],
     "homepage"       : "https://github.com/devaloka/network-wp-query",
     "bugs"           : {
-        "url": "https://github.com/devaloka/network-wp-query/isssues"
+        "url": "https://github.com/devaloka/network-wp-query/issues"
     },
     "license"        : "(GPL-2.0 OR GPL-3.0)",
     "author"         : {
