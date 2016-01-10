@@ -61,6 +61,8 @@
             "no-shortcut-reference-link"       : true,
             "no-table-indentation"             : true,
             "no-tabs"                          : true,
+            "no-undefined-references"          : true,
+            "no-unused-definitions"            : true,
             "ordered-list-marker-style"        : "consistent",
             "ordered-list-marker-value"        : "ordered",
             "rule-style"                       : "consistent",
