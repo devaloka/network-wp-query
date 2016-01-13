@@ -49,10 +49,10 @@
     },
     "scripts"          : {
         "test"       : [
-            "php vendor/squizlabs/php_codesniffer/scripts/phpcs --colors"
+            "vendor/bin/phpcs --colors"
         ],
         "test-travis": [
-            "php vendor/squizlabs/php_codesniffer/scripts/phpcs --colors"
+            "vendor/bin/phpcs --colors"
         ]
     },
     "archive"          : {
