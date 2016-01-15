@@ -1,4 +1,9 @@
-# Network WP Query [![Build Status][travis-image]][travis-url] [![Packagist][packagist-image]][packagist-url]
+# Network WP Query
+
+[![Latest Stable Version][stable-image]][stable-url]
+[![Latest Unstable Version][unstable-image]][unstable-url]
+[![License][license-image]][license-url]
+[![Build Status][travis-image]][travis-url]
 
 A WordPress plugin that provides Network-wide WP_Query for Multisite
 environment.
@@ -112,8 +117,14 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
 *   [miguelpeixe/WP_Query_Multisite](https://github.com/miguelpeixe/WP_Query_Multisite)
 *   [#22816 (Multisite WP_Query) – WordPress Trac](https://core.trac.wordpress.org/ticket/22816)
 
+[stable-image]: https://poser.pugx.org/devaloka/network-wp-query/v/stable
+[stable-url]: https://packagist.org/packages/devaloka/network-wp-query
+
+[unstable-image]: https://poser.pugx.org/devaloka/network-wp-query/v/unstable
+[unstable-url]: https://packagist.org/packages/devaloka/network-wp-query
+
+[license-image]: https://poser.pugx.org/devaloka/network-wp-query/license
+[license-url]: https://packagist.org/packages/devaloka/network-wp-query
+
 [travis-image]: https://travis-ci.org/devaloka/network-wp-query.svg?branch=master
 [travis-url]: https://travis-ci.org/devaloka/network-wp-query
-
-[packagist-image]: https://img.shields.io/packagist/v/devaloka/network-wp-query.svg
-[packagist-url]: https://packagist.org/packages/devaloka/network-wp-query
