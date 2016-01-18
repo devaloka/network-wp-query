@@ -67,7 +67,7 @@
             ".remarkrc",
             "gulpfile.js",
             "composer.json",
-            "phpcs.xml",
+            "phpcs.xml.dist",
             ".travis.yml"
         ]
     },
