@@ -8,7 +8,7 @@ Author URI: http://whizark.com
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: network-wp-query
-Domain Path: /languages
+Domain Path: /network-wp-query/languages
 Network: true
 */
 
