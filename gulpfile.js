@@ -17,7 +17,7 @@ const extra   = require('./composer.json').extra;
  */
 function bumpTaskFactory(type) {
     return () => {
-        const packages       = ['composer.json', 'package.json'];
+        const packages       = ['package.json'];
         const plugin         = (pkg.main) ? [path.normalize(pkg.main)] : [];
         const loader         = (extra && extra['installer-loader']) ? [path.normalize(extra['installer-loader'])] : [];
         const plugins        = plugin.concat(loader);
