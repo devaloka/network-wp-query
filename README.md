@@ -11,18 +11,20 @@ environment.
 This plugin is based on / a improved version of [WP_Query_Multisite](https://github.com/miguelpeixe/WP_Query_Multisite)
 (a custom version of [WP_Query_Multisite](https://github.com/ericandrewlewis/WP_Query_Multisite)).
 
-## Manual Installation
+## Installation
+
+### Manual Installation
 
 1.  Just copy all files into `<ABSPATH>wp-content/plugins/network-wp-query/`.
 
-## Manual Installation (as a Must-Use plugin)
+### Manual Installation (as a Must-Use plugin)
 
 1.  Just copy all files into `<ABSPATH>wp-content/mu-plugins/network-wp-query/`.
 
 2.  Move `network-wp-query/loader/50-network-wp-query-loader.php`
     into `<ABSPATH>wp-content/mu-plugins/`.
 
-## Installation via Composer
+### Installation via Composer
 
 1.  Install via Composer.
 
@@ -30,7 +32,7 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
     composer require devaloka/network-wp-query
     ```
 
-## Installation via Composer (as a Must-Use plugin)
+### Installation via Composer (as a Must-Use plugin)
 
 1.  Install via Composer.
 
