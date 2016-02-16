@@ -5,8 +5,8 @@
         "url" : "https://github.com/devaloka/network-wp-query.git"
     },
     "scripts"        : {
-        "lint"       : "remark -u remark-lint README.md",
-        "lint-travis": "remark -f -u remark-lint README.md"
+        "lint"       : "remark README.md",
+        "lint-travis": "remark -f README.md"
     },
     "devDependencies": {
         "gulp"        : "^3.9.0",
