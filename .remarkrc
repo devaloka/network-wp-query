@@ -10,7 +10,7 @@
         "yaml"      : false
     },
     "plugins" : {
-        "remark-lint": {
+        "lint": {
             "externals"                        : [],
             "reset"                            : false,
             "blockquote-indentation"           : "consistent",
