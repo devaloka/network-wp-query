@@ -36,6 +36,12 @@ script:
     - composer test-travis
 
 notifications:
-    email:
+    email: false
+
+    slack:
+        on_pull_requests: false
+        on_start: never
         on_success: never
         on_failure: change
+        rooms:
+            - secure: h1bWaYV0tqspgkQAbEFH8gYkc91t2EmtljHDJohKuOOvWyw700VAMSkr+yin34rGtouAxBfT2PHCOQuzmiBTjBmnOO5eQgx4UrGBVhiE7AgYwO7DhTMBmV5EyMICPDPkTkCiVAupp+4N5IbRtVBCybYPwr8pUbKVAaBp+jTSV6pdy+XlhJ0OuSWQQi4yWLC/38Yx9kuK5acaVizJkeA5doshtYawiqYx9khFayODBn7zIBZ4Dm7uxNO79bBDcoLliGJIiQtC/HzVGh0BF0Vysz2ZVfzsWVtsIbJXG/4dczs/8aXM2XpVm1NX2AzxBjFTOhQeEyLgVhraKAPiUQ0W3Cx091wOBu/8d8WSXv8n6ZgQTytySLZIWQhqQbCOOYJ6zpeE1Ad8ohgArXFPxCa0zyXaytmvbGLf8hoe6Ts7+hVD/nvrdsU9+VD12JF5H9PDg1JDLhx9x3L8WsFbDgApeGL8JXTGDJRTyrcpQnAQ/yY6Hv19cny7S34gBBVdxezi+pkZ7b/iy3b/2A/HC2MIAZqyyLenp3msVhwzsPIvOw8tGpaA/fW/QCj0s1mYfc8HvsZOP3YUBlcnR1aVX5K7OuAH4IaS4/BQXdsv/g2zAV62SaAtWkGzFcaML3e5EiyMEOpZ5JeZkbcgZwwciiYn8RTkGntz459gRLE6hyd5Iz8=
