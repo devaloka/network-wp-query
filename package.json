@@ -9,10 +9,10 @@
         "lint-travis": "remark -f README.md"
     },
     "devDependencies": {
-        "gulp"        : "^3.9.0",
-        "gulp-filter" : "^3.0.1",
+        "gulp"        : "^3.9.1",
+        "gulp-filter" : "^4.0.0",
         "gulp-replace": "^0.5.4",
-        "remark"      : "^4.0.0",
+        "remark"      : "^4.2.0",
         "remark-lint" : "^3.0.0",
         "semver"      : "^5.1.0"
     },
