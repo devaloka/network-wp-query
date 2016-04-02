@@ -1,5 +1,6 @@
 {
     "version"        : "0.1.2",
+    "main"           : "./network-wp-query.php",
     "repository"     : {
         "type": "git",
         "url" : "https://github.com/devaloka/network-wp-query.git"
