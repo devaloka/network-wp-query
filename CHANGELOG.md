@@ -1,3 +1,13 @@
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/devaloka/network-wp-query/compare/v0.1.2...v0.1.3) (2016-04-02)
+
+
+### Bug Fixes
+
+* Domain Path in MU plugin loader ([140c486](https://github.com/devaloka/network-wp-query/commit/140c486))
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/devaloka/network-wp-query/compare/v0.1.1...v0.1.2) (2016-01-08)
 
