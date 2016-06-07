@@ -46,7 +46,7 @@
             "no-emphasis-as-heading"           : true,
             "no-file-name-articles"            : true,
             "no-file-name-consecutive-dashes"  : true,
-            "no-file-name-irregular-characters": true,
+            "no-file-name-irregular-characters": "\\.a-zA-Z0-9-",
             "no-file-name-mixed-case"          : true,
             "no-file-name-outer-dashes"        : true,
             "no-heading-content-indent"        : true,
