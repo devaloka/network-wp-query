@@ -10,12 +10,13 @@
         "lint-travis": "remark -f README.md"
     },
     "devDependencies": {
-        "gulp"        : "^3.9.1",
-        "gulp-filter" : "^4.0.0",
-        "gulp-replace": "^0.5.4",
-        "remark-cli"  : "^2.0.0",
-        "remark-lint" : "^5.1.0",
-        "semver"      : "^5.3.0"
+        "gulp"                  : "^3.9.1",
+        "gulp-filter"           : "^4.0.0",
+        "gulp-replace"          : "^0.5.4",
+        "remark-cli"            : "^2.0.0",
+        "remark-lint"           : "^5.1.0",
+        "semver"                : "^5.3.0"
+        "@whizark/remark-preset": "~0.2.0"
     },
     "private"        : true
 }
