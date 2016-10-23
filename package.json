@@ -14,7 +14,7 @@
         "gulp-filter" : "^4.0.0",
         "gulp-replace": "^0.5.4",
         "remark-cli"  : "^1.0.0",
-        "remark-lint" : "^4.0.2",
+        "remark-lint" : "^5.1.0",
         "semver"      : "^5.3.0"
     },
     "private"        : true
