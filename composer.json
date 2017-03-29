@@ -41,8 +41,9 @@
         "source": "https://github.com/devaloka/network-wp-query"
     },
     "require"          : {
-        "php"                : ">=5.5.9",
-        "composer/installers": "~1.2"
+        "php"                      : ">=5.5.9",
+        "composer/installers"      : "~1.2",
+        "roave/security-advisories": "dev-master"
     },
     "require-dev"      : {
         "squizlabs/php_codesniffer": "^2.8.1"
