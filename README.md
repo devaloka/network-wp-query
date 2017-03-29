@@ -65,7 +65,7 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
 ### Query to several specific Sites
 
 ```php
-<?php $query = new WP_Query(['network' => true, 'site__in' => [1, 2, 3]]); ?>
+<?php $query = new WP_Query(['network' => true, 'sites__in' => [1, 2, 3]]); ?>
 
 <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()): $query->the_post(); ?>
@@ -79,7 +79,7 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
 ### Query excluding several specific Sites
 
 ```php
-<?php $query = new WP_Query(['network' => true, 'site__not_in' => [1, 2, 3]]); ?>
+<?php $query = new WP_Query(['network' => true, 'sites__not_in' => [1, 2, 3]]); ?>
 
 <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()): $query->the_post(); ?>
@@ -106,11 +106,11 @@ This plugin is based on / a improved version of [WP_Query_Multisite](https://git
 
 ## Parameters
 
-| Name           | Type    | Description                               |
-| -------------- |:-------:| ----------------------------------------- |
+| Name           |  Type   | Description                               |
+|----------------|:-------:|-------------------------------------------|
 | network        | boolint | Whether perform network-wide query.       |
-| site__in       | int[]   | Blog IDs to include in the query.         |
-| site__not_in   | int[]   | Blog IDs to excluded from the query.      |
+| sites__in      | int[]   | Blog IDs to include in the query.         |
+| sites__not_in  | int[]   | Blog IDs to excluded from the query.      |
 | posts_per_site | int     | The number of posts per Site to retrieve. |
 
 ## References
