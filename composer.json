@@ -42,10 +42,10 @@
     },
     "require"          : {
         "php"                : ">=5.5.9",
-        "composer/installers": "~1.1"
+        "composer/installers": "~1.2"
     },
     "require-dev"      : {
-        "squizlabs/php_codesniffer": "^2.6.2"
+        "squizlabs/php_codesniffer": "^2.8.1"
     },
     "scripts"          : {
         "test"       : [
