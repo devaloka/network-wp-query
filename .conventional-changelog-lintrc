@@ -1,0 +1,7 @@
+{
+    "extends"  : [
+        "cz"
+    ],
+    "rules"    : {},
+    "wildcards": {}
+}

@@ -36,7 +36,7 @@ install:
     - composer install --prefer-source
 
 script:
-    - npm run-script lint-travis
+    - npm run-script ci:lint
     - composer test-travis
 
 notifications:

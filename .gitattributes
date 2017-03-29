@@ -4,8 +4,11 @@
 .gitignore export-ignore
 .mailmap export-ignore
 .editorconfig export-ignore
+.conventional-changelog-lintrc export-ignore
+.cz-config.js export-ignore
 package.json export-ignore
 npm-shrinkwrap.json export-ignore
+.remarkignore export-ignore
 .remarkrc export-ignore
 gulpfile.js export-ignore
 composer.json export-ignore
