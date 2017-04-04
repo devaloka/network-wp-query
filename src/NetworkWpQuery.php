@@ -222,7 +222,8 @@ class NetworkWpQuery
 
         $this->selectStatements = [];
         $rootSiteDbPrefix       = $this->wpdb->prefix;
-        $postsPerSite           = (int) $query->get('posts_per_site', 1);
+        $postsPerPage           = (int) $query->get('posts_per_page', get_option('posts_per_page'));
+        $postsPerSite           = (int) $query->get('posts_per_site', $postsPerPage);
 
         foreach ($this->siteIds as $siteId) {
             switch_to_blog($siteId);
