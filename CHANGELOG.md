@@ -1,3 +1,23 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/devaloka/network-wp-query/compare/v0.1.3...v0.2.0) (2017-04-09)
+
+
+### Features
+
+* include all network-wide posts by default ([ce27642](https://github.com/devaloka/network-wp-query/commit/ce27642))
+
+
+### BREAKING CHANGES
+
+* The default value of `posts_per_site` becomes the same value of
+`posts_per_page`.
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/devaloka/network-wp-query/compare/v0.1.2...v0.1.3) (2016-04-02)
 
