@@ -24,13 +24,13 @@
   "devDependencies": {
     "npm-run-all": "~4.0.2",
     "chokidar-cli": "~1.2.0",
-    "husky": "~0.13.3",
+    "husky": "~0.13.4",
     "@whizark/cz-cli": "~0.3.0",
     "standard-version": "~4.0.0",
     "gulp": "^3.9.1",
     "gulp-filter": "^5.0.0",
     "gulp-replace": "^0.5.4",
-    "remark-cli": "^3.0.0",
+    "remark-cli": "^3.0.1",
     "remark-lint": "^6.0.0",
     "semver": "^5.3.0",
     "@whizark/remark-preset": "~0.6.0"
