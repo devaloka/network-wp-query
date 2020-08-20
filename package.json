@@ -26,7 +26,7 @@
     "chokidar-cli": "~1.2.0",
     "husky": "~0.13.4",
     "@whizark/cz-cli": "~0.3.0",
-    "standard-version": "~4.0.0",
+    "standard-version": "~9.0.0",
     "gulp": "^3.9.1",
     "gulp-filter": "^5.0.0",
     "gulp-replace": "^0.5.4",
